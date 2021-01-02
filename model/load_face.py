@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 def load_face():
     known_face_encodings, known_face_names = [], []
-    paths = rf"D:\PyCharm_Study\TestCase\yolov5-master\FaceDetection\model\model_data"
+    paths = rf"model/model_data"
     for file in os.listdir(paths):
         path = os.path.join(paths, file)
         name = [file[:-4]]

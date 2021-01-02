@@ -29,8 +29,8 @@ def resize(img_array, align_mode):
 
 
 def images_to_video(path, video_path):
+    count = 0
     img_array = []
-
     for filename in glob.glob(path + '/*.jpg'):
         print(filename)
         img = cv2.imread(filename)
@@ -38,6 +38,9 @@ def images_to_video(path, video_path):
             print(filename + " is error!")
             continue
         img_array.append(img)
+        count += 1
+        if count == 1000:
+            break
     # 图片的大小需要一致
     img_array, size = resize(img_array, 'largest')
     fps = 20
