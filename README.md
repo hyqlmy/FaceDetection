@@ -1,12 +1,12 @@
-## 使用简介
-### 需要使用的包
+# 使用简介
+## 需要使用的包
 '''
 face_recognition
 cv2
 numpy
 time
 '''
-### 需要使用的app
+## 需要使用的app
 IP摄像头
 如何使用ip摄像头
 - 打开手机热点， 并用电脑连接热点
@@ -17,7 +17,7 @@ IP摄像头
 - cv2.VideoCapture(video)
 - py有该语句的有get_test_data.py   selection.py   get_train_data.py  
 
-### 使用方法
+## 使用方法
 ### 函数文件介绍
 1. 运行utils/get_train_data.py文件。
 功能：默认是使用电脑摄像头采集人脸图片。采集完成后自动训练并把人脸特征文件自动保存在model/model_data/中。
