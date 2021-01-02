@@ -1,6 +1,6 @@
 import os
 
-paths = "D:/PyCharm_Study/TestCase/yolov5-master/FaceDetection/video/"
+paths = "../video/"
 
 def find_last_path(path):
     """
