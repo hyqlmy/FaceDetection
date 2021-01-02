@@ -1,11 +1,14 @@
 # 使用简介
 ## 需要使用的包
-'''
-face_recognition
-cv2
-numpy
-time
-'''
+
+1. face_recognition
+2. cv2
+3. numpy
+4. time
+5. PIL
+6. dlib
+7. ...
+
 ## 需要使用的app
 IP摄像头
 如何使用ip摄像头
@@ -23,7 +26,7 @@ IP摄像头
 功能：默认是使用电脑摄像头采集人脸图片。采集完成后自动训练并把人脸特征文件自动保存在model/model_data/中。
 手机摄像头的使用：在应用商店下载“IP摄像头”(华为应用商城没有, 小米有)，已上传至github:https://github.com/hyqlmy/FaceDetection/blob/main/IPcamera.apk
 打开手机热点，连接至电脑，打开IP摄像头，打开IP摄像头服务器。
-修改代码：video="http://admin:admin@192.168.43.1:8081/",即可使用。
+修改代码：video="http://admin:admin@192.168.43.1:8081/" 即可使用。
 
 2. 运行utils/get_test_data.py文件
 功能：自动创建文件夹和采集训练集图片，可进行视频导入检测。在detect.py运行后，选择3即可。（等效于进行非实时检测视频）
@@ -88,9 +91,15 @@ video下的input与output存放的是视频文件
 
 
 ***************************************************************
+
 作者：Silencer
+
 时间：2021/1/2
+
 邮箱：hyqlmy@gmail.com
+
 博客：https://blog.csdn.net/hua_you_qiang
+
 github: https://github.com/hyqlmy/FaceDetection
+
 ***************************************************************
