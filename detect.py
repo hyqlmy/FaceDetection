@@ -124,5 +124,5 @@ while True:
 video_capture.release()
 cv2.destroyAllWindows()
 if select == '3':
-    merge(paths + 'tmp/output/', 'output/')
+    merge('./video/tmp/output/', 'output/')
 print("Total time :", time() - begin)
