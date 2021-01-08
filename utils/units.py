@@ -22,7 +22,7 @@ def mkpath(path):
     :param path: 一段相对路径主要是['input/', 'output/', 'tmp/input/', 'tmp/output/']四个组成
     :return: 生成最新路径， 返回最新路径名。
     """
-    path = paths + path
+    path = './video/' + path
     number = find_last_path(path)[1] + 1
     new_path = 'exp' + str(number)
     new_path = os.path.join(path, new_path)
